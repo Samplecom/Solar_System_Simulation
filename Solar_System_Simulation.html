@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solar System Simulation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header section with centered title -->
+  <div class="top-bar">
+    <h2 class="center-title">Solar System Simulation</h2>
+  </div>
+
+  <!-- Controls placed in top-left now -->
+  <div class="controls">
+    <button id="pauseBtn">Pause</button>
+    <button id="resetBtn">Reset</button>
+  </div>
+
+  <!-- Toggle button to show/hide sidebar controls -->
+  <div class="sidebar-toggle">
+    <button onclick="toggleSidebar()">Planet Controls</button>
+  </div>
+
+  <!-- Sidebar for dynamic planet speed controls - moved to top right -->
+  <div class="sidebar top-right" id="sidebar">
+    <h2>Planet Controls</h2>
+    <div id="planet-controls"></div>
+  </div>
+
+  <!-- Container for 3D rendering canvas -->
+  <div id="canvas-container"></div>
+
+  <!-- External Three.js script and custom JavaScript -->
+  <script src="https://unpkg.com/three@0.148.0/build/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
